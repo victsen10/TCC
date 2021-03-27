@@ -1,64 +1,51 @@
-import React from 'react';
-import { BannerMain, TagA, BarCinza, ContainerPrincipal, ContainerLink } from './styles';
-import LogInfor from '../../Assets/img/Informais.jpg';
+import React from 'react'
+import { BannerMain, BarNav } from './styles'
+import LogInfor from '../../Assets/img/Informais.jpg'
 
-function Banner() {
-  return (
-    <div id="ContainerMain" style={ContainerPrincipal}>
+function myFunction() {
+  var x = document.getElementById('myMenuNav')
 
-
-      <BannerMain id="BannerMain">
-
-        <div id="Logo" className="dv1">
-          <a>
-            <img className="Logo" src={LogInfor} alt="whatsapp" />
-          </a>
-        </div>
-
-
-        {/* <div style={ContainerLink}>
-            <TagA href="/">
-              <span>INICIO</span>
-            </TagA>
-            <TagA href="/QuemSomos/">
-              <span>QUEM SOMOS</span>
-            </TagA>
-            <TagA href="/FaleConosco/">
-              <span>FALE CONOSCO</span>
-            </TagA>
-            <TagA href="/Login/">
-              <span>LOGIN</span>
-            </TagA>
-          </div> */}
-
-        <nav style={ContainerLink}>
-          <ul>
-            <li><TagA href="/">INICIO</TagA></li>
-            <li><TagA href="/Quemsomos/">QUEM SOMOS</TagA></li>
-            <li><TagA href="/FaleConosco/">FALE CONOSCO</TagA></li>
-            <li><TagA href="/Login/">LOGIN</TagA></li>
-          </ul>
-        </nav>
-
-
-
-
-      </BannerMain>
-
-      {/* <div style={BarCinza}>
-        <table>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-      </div> */}
-
-
-
-
-
-    </div>
-  );
+  if (x.className === 'menu') {
+    x.className += ' responsive'
+    console.log("responsive")
+      } else {
+    x.className = 'menu'
+    console.log("menu")
+   
+    
+  }
 }
 
-export default Banner;
+export default function Banner() {
+  return (
+    <BannerMain id="BannerMain">
+      <div id="Logo" className="LogoImg">
+        <a>
+          <img className="Logo" src={LogInfor} alt="whatsapp" />
+        </a>
+      </div>
+
+      <BarNav>
+        <ul className="menu" id="myMenuNav">
+          <li>
+            <a href="/" className="active">HOME</a>
+          </li>
+          <li>
+            <a href="/Quemsomos/">QUEM SOMOS</a>
+          </li>
+          <li>
+            <a href="/FaleConosco/">FALE CONOSCO</a>
+          </li>
+          <li>
+            <a href="/Login/">LOGIN</a>
+          </li>
+          <li className="icon">
+            <a href="javascript:void(0);"  onClick={myFunction}>
+              <i class="fa fa-bars"></i>{' '}
+            </a>
+          </li>
+        </ul>
+      </BarNav>
+    </BannerMain>
+  )
+}

@@ -1,11 +1,41 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const BannerMain = styled.section `
-  position: absolute;
-  width: 1440px;
+export const BannerMain = styled.section`
+  width:100%;
   height: 224px;
   background-color: black;
   border-bottom: 9px solid #747474;
+  overflow: hidden; 
+
+  @media screen and (max-width: 600px) {
+    .Logo{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+  
+    .menu li:not(:first-child) {display: none;}
+    .menu li.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .menu.responsive li a{position: relative;}
+    .menu.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive li{
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }
+  }
 
   .Logo {
     position: absolute;
@@ -16,15 +46,21 @@ export const BannerMain = styled.section `
     /* max-width: 5rem;
     align-content: flex-start; */
   }
-`;
 
-export const TagA = styled.a `
+
+
+
+
+`
+
+export const TagA = styled.a`
   padding: 2px;
-  float: left;
+  float: right;
   color: white;
   text-align: left;
   text-decoration: none;
   padding-left: 20px;
+  border: 1px solid blue;
 
   &:hover,
   &:focus {
@@ -36,30 +72,53 @@ export const TagA = styled.a `
     text-decoration: none;
     font-size: 24px;
   }
-`;
+`
 
-export const BarCinza = {
-    position: 'absolute',
-    background: '#747474',
-    width: '1440px',
-    height: '9px',
-    left: '0px',
-    top: '215px',
-    // margin: '0.5rem',
-};
 
-export const ContainerPrincipal = {
-    width: '1440px',
-    height: '224px',
-    background: 'red',
+// export const ContainerPrincipal = {
+//   width: '1440px',
+//   height: '224px',
+//   background: 'red',
+// }
 
-};
 
-export const ContainerLink = {
-    // position: 'absolute',
-    width: '686px',
-    height: '30px',
-    left: '756px',
-    top: '157.86px',
+export const BarNav = styled.nav`
+  .menu {
+    list-style: none;
+    float: right;
+    overflow: hidden;
+  }
 
-};
+  .menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+  }
+
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    font-size: 24px;
+  }
+
+  .menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #ccc;
+    //-webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+  }
+
+  .menu .icon {
+    display: none;
+  }
+
+
+
+
+ 
+
+`
+
