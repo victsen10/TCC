@@ -1,18 +1,39 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerPrincipal = styled.div`
-  /* max-width: 1440px;
-  height: 709px; */
-  /* min-width: 800;
-  min-height: 600; */
-  background-color: 'black';
-`;
+  width: 100%;
+  background-color: black;
+
+  #containerbtn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .continerImag img {
+      display: none;
+    }
+    .btnOrcam {
+      margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .btnOrcam {
+      margin-top: 1rem;
+    }
+  
+
+
+
+
+  }
+`
 
 export const Container = {
   textAlign: 'center',
   position: 'relative',
   background: 'black',
-};
+}
 
 export const TagDiv = styled.div`
   background-color: #747474;
@@ -20,9 +41,10 @@ export const TagDiv = styled.div`
   margin: opx 0 10px 0;
   color: white;
   justify-content: center;
-`;
+`
 
 export const TagA = styled.a`
+  margin-top: 1rem;
   margin: 0px 33px;
   align-content: center;
 
@@ -42,48 +64,27 @@ export const TagA = styled.a`
     align-items: center;
     text-align: center;
     color: white;
+    line-height: 40px;
 
     ::marker {
       color: blue;
     }
   }
-`;
-
-export const ImgBack = styled.image`
-  
-
-img {
-
-    /* max-width: 100%;
-    max-height: 768px;
-    min-width: 800;
-    min-height: 600; */
-  }
-`;
+`
 
 export const ContainerBtn = {
-
-  position: 'absolute',
   textAlign: 'center',
-  width: '720px',
-  height: '121px',
-  left: '385px',
-  top: '722px',
-  
-  // background: 'black',
-};
+  zIndex: '100',
+}
 
 export const ContainerImg = {
-  // position: 'absolute', 
   left: '0px',
- 
-  // marginLeft:'0.5rem'
-  
-};
+  textAlign: 'center',
+}
 
-export const ConfImg ={
-  
-    width: '1440px',
-    height: '700px',
-   
+export const ConfImg = {
+  maxWidth: '1440px',
+  maxHeight: '700px',
+   width: 'auto',
+  height: 'auto',
 }
