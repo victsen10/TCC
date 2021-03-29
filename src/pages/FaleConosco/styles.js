@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerForm = {
-  position: 'absolute',
+ 
   width: '992px',
   height: '568px',
-  left: '204px',
-  top: '277px',
+ 
+
   background: 'rgba(100, 99, 99, 0.51)',
   zIndex: '0',
   textAlign: 'center',
   Display: 'flex',
-};
+}
 
 export const LabelIitle = {
   position: 'absolute',
@@ -20,34 +20,30 @@ export const LabelIitle = {
   top: '343px',
   textAlign: 'center',
   zIndex: '1',
-};
+}
 
 export const Title = {
   fontSize: '45px',
   color: 'white',
-};
-
-
+}
 
 export const FormFaleConosco = {
   width: '50%',
   height: '422px',
-  margin:'0.5rem',
-  
-  // background: 'red',
-};
+  margin: '0.5rem',
+
+}
 export const InfoFaleConosco = {
   width: '50%',
   height: '422px',
   color: 'white',
   fontSize: '28px',
-  // background: 'blue',
   borderRight: '5px solid black',
-};
+}
 
 export const ContainerFormSecundario = {
   display: 'flex',
-};
+}
 
 export const Form = styled.form`
   div {
@@ -83,15 +79,22 @@ export const Form = styled.form`
     background: none;
     font-size:24px;
 
-    input:-internal-autofill-selected {
+    input:-internal-autofill-selected 
     appearance: none;
     background-color: none;
     background-image: none;
-    color: -internal-light-dark(black, white) !important;
+    color: -internal-light-dark(black, white) !important;}
+  
+  
+    input::-webkit-input-placeholder {
+    color: black;
+  }
+  
+  
 
   }
 
   
 }
 
-`;
+`

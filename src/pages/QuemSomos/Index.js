@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PageDefault from '../../Components/PageDefault/Index';
 import '../../fonts/DenkOne-Regular.ttf';
-import { ContainerForm, LabelIitle, Title, Text } from './styles';
+import { ContainerForm, Title, Text } from './styles';
 
 function QuemSomos() {
   return (
     <div id="ContainerQuem">
-      <PageDefault />
+      <PageDefault>
 
       
 
@@ -27,6 +26,7 @@ function QuemSomos() {
           pacote Office e outros.
         </h1>
       </div>
+      </PageDefault>
     </div>
   );
 }

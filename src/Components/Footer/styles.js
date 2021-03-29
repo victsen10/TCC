@@ -36,9 +36,3 @@ export const FooterBase = styled.footer`
   }
   
 `;
-
-export const BarCinza = {
-  background: '#747474',
-  width: '100%',
-  height: '9px',
-};

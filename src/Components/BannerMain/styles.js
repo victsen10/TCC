@@ -25,7 +25,7 @@ export const BannerMain = styled.section`
     #nomeEmpresa{
      
       display: -webkit-inline-box;
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 

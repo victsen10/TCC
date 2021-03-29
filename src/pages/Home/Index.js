@@ -1,17 +1,18 @@
 import React from 'react'
-
-import BackImg from '../../Assets/img/fundo.png'
+import PageDefault from '../../Components/PageDefault/Index'
 import {
   ContainerBtn,
   TagA,
-  ContainerImg,
-  ConfImg,
-  ContainerPrincipal,
+  sloganInfor
 } from './styles'
 
 function Home() {
   return (
-    <ContainerPrincipal id="ContainerHome">
+    <PageDefault>
+      <div style={sloganInfor}>
+        <h1>A tecnologia ao seu alcance</h1>
+        <h3>Aqui o seu computador ainda tem solução.</h3>
+      </div>
       <div id="containerbtn" style={ContainerBtn}>
         <TagA className="btnAssist">
           <span>
@@ -28,11 +29,7 @@ function Home() {
           </span>
         </TagA>
       </div>
-
-      <div className="continerImag" style={ContainerImg}>
-        <img style={ConfImg} src={BackImg} alt="ImgBackGround" />
-      </div>
-    </ContainerPrincipal>
+    </PageDefault>
   )
 }
 export default Home

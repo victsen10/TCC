@@ -1,34 +1,5 @@
 import styled from 'styled-components'
 
-export const ContainerPrincipal = styled.div`
-  width: 100%;
-  background-color: black;
-
-  #containerbtn {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  @media screen and (max-width: 600px) {
-    .continerImag img {
-      display: none;
-    }
-    .btnOrcam {
-      margin-top: 1rem;
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .btnOrcam {
-      margin-top: 1rem;
-    }
-  
-
-
-
-
-  }
-`
-
 export const Container = {
   textAlign: 'center',
   position: 'relative',
@@ -77,14 +48,8 @@ export const ContainerBtn = {
   zIndex: '100',
 }
 
-export const ContainerImg = {
-  left: '0px',
+export const sloganInfor = {
+  color: 'white',
+  fontSize: '1.5rem',
   textAlign: 'center',
-}
-
-export const ConfImg = {
-  maxWidth: '1440px',
-  maxHeight: '700px',
-   width: 'auto',
-  height: 'auto',
 }

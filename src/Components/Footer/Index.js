@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterBase, BarCinza } from './styles';
+import { FooterBase } from './styles';
 import LogInst from '../../Assets/img/instagram2.png';
 import LogWhats from '../../Assets/img/whatsapp.png';
 import LogMail from '../../Assets/img/Mail.png';
