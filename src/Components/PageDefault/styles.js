@@ -16,7 +16,9 @@ export const ContainerChild = {
   position: 'absolute',
   width: '992px',
   top: '277px',
-  border: '1px solid red',
+  // border: '1px solid red',
+  borderRadius: '2.5rem',
+  background: 'rgba(100, 99, 99, 0.51)'
 }
 
 export const ImgBack = styled.img`

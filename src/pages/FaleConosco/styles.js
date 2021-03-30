@@ -1,12 +1,8 @@
 import styled from 'styled-components'
 
 export const ContainerForm = {
- 
   width: '992px',
   height: '568px',
- 
-
-  background: 'rgba(100, 99, 99, 0.51)',
   zIndex: '0',
   textAlign: 'center',
   Display: 'flex',
@@ -31,7 +27,6 @@ export const FormFaleConosco = {
   width: '50%',
   height: '422px',
   margin: '0.5rem',
-
 }
 export const InfoFaleConosco = {
   width: '50%',

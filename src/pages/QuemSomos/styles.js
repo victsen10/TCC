@@ -1,24 +1,16 @@
-
 export const ContainerForm = {
-  // position: 'absolute',
   width: '992px',
   height: '568px',
-  // left: '204px',
+  zIndex: '0',
+}
 
-  background: 'rgba(100, 99, 99, 0.51)',
-  zIndex:'0',
-};
-
- export const Title = {
-   fontSize:'45px',
-   color: 'white',
-   textAlign:'center'
-   
-   
- }
-
- export const Text = {
+export const Title = {
+  fontSize: '45px',
   color: 'white',
-  padding:'0.5rem',
+  textAlign: 'center',
+}
 
- }
+export const Text = {
+  color: 'white',
+  padding: '0.5rem',
+}

@@ -50,6 +50,7 @@ export const ContainerBtn = {
 
 export const sloganInfor = {
   color: 'white',
+  height: '400px',
   fontSize: '1.5rem',
   textAlign: 'center',
 }

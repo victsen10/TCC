@@ -13,8 +13,9 @@ import Home from './pages/Home/Index';
 import Login from './pages/Login/Index';
 import QuemSomos from './pages/QuemSomos/Index';
 import FaleConosco from './pages/FaleConosco/Index';
+import Cadastro from './pages/Cadastro/Index';
 
-const PaginaContrucao = () => <div>Em construção</div>;
+;
 
 ReactDOM.render(
   <BrowserRouter>
@@ -25,8 +26,8 @@ ReactDOM.render(
       <Route path="/Login/" component={Login} exact />
       <Route path="/QuemSomos/" component={QuemSomos} exact />
       <Route path="/FaleConosco/" component={FaleConosco} exact />
-      <Route path="/produto/chas" component={PaginaContrucao} />
-      <Route component={() => <div>Página 404</div>} />
+      <Route path="/Cadastro/" component={Cadastro} />
+      
 
 
     </Switch>
