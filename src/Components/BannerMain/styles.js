@@ -7,9 +7,25 @@ export const BannerMain = styled.section`
   border-bottom: 9px solid #747474;
   overflow: hidden; 
 
+  @media screen and (min-width: 601px) {
+    
+    #nomeEmpresa{
+      display:none;
+    }
+  }
+
+
+
+
   @media screen and (max-width: 600px) {
     .Logo{
       display:none;
+    }
+
+    #nomeEmpresa{
+     
+      display: -webkit-inline-box;
+      font-size: 40px;
     }
   }
 
@@ -32,13 +48,13 @@ export const BannerMain = styled.section`
     .menu.responsive li{
       float: none;
       display: block;
-      text-align: left;
-      
+      text-align: left;      
     }
+
   }
 
   .Logo {
-    position: absolute;
+   
     width: 291.11px;
     height: 215px;
     left: 136px;
@@ -60,7 +76,7 @@ export const TagA = styled.a`
   text-align: left;
   text-decoration: none;
   padding-left: 20px;
-  border: 1px solid blue;
+  
 
   &:hover,
   &:focus {

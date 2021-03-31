@@ -8,6 +8,15 @@ export const FooterBase = styled.footer`
   text-align: center;
   border-top: 9px solid #747474;
   
+  
+  @media screen and (max-width: 600px) {
+    .infoContato{
+      font-size: 10px;
+    }
+  }
+  
+
+
 
   .Logo {
     max-width: 1rem;
@@ -27,9 +36,3 @@ export const FooterBase = styled.footer`
   }
   
 `;
-
-export const BarCinza = {
-  background: '#747474',
-  width: '100%',
-  height: '9px',
-};
