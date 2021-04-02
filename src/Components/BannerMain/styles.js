@@ -1,37 +1,33 @@
 import styled from 'styled-components'
 
 export const BannerMain = styled.section`
-  width:100%;
-  height: 224px;
+  width: 100%;
+  height: 22.4rem;
   background-color: black;
-  border-bottom: 9px solid #747474;
-  overflow: hidden; 
+  border-bottom: 0.9rem solid #747474;
+  overflow: hidden;
 
   @media screen and (min-width: 601px) {
-    
-    #nomeEmpresa{
-      display:none;
+    #nomeEmpresa {
+      display: none;
     }
   }
 
-
-
-
   @media screen and (max-width: 600px) {
-    .Logo{
-      display:none;
+    .Logo {
+      display: none;
     }
 
-    #nomeEmpresa{
-     
+    #nomeEmpresa {
       display: -webkit-inline-box;
-      font-size: 40px;
+      font-size: 1.6rem;
     }
   }
 
   @media screen and (max-width: 900px) {
-  
-    .menu li:not(:first-child) {display: none;}
+    .menu li:not(:first-child) {
+      display: none;
+    }
     .menu li.icon {
       float: right;
       display: block;
@@ -39,44 +35,36 @@ export const BannerMain = styled.section`
   }
 
   @media screen and (max-width: 900px) {
-    .menu.responsive li a{position: relative;}
+    .menu.responsive li a {
+      position: relative;
+    }
     .menu.responsive li.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .menu.responsive li{
+    .menu.responsive li {
       float: none;
       display: block;
-      text-align: left;      
+      text-align: left;
     }
-
   }
 
   .Logo {
-   
-    width: 291.11px;
-    height: 215px;
-    left: 136px;
-    top: 0px;
-    /* max-width: 5rem;
-    align-content: flex-start; */
+    width: 29.111rem;
+    height: 21.5rem;
+    left: 13.6rem;
+    
   }
-
-
-
-
-
 `
 
 export const TagA = styled.a`
-  padding: 2px;
+  padding: 2rem;
   float: right;
   color: white;
   text-align: left;
   text-decoration: none;
-  padding-left: 20px;
-  
+  padding-left: 2rem;
 
   &:hover,
   &:focus {
@@ -86,17 +74,9 @@ export const TagA = styled.a`
   span {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 `
-
-
-// export const ContainerPrincipal = {
-//   width: '1440px',
-//   height: '224px',
-//   background: 'red',
-// }
-
 
 export const BarNav = styled.nav`
   .menu {
@@ -108,33 +88,25 @@ export const BarNav = styled.nav`
   .menu li {
     position: relative;
     float: left;
-    border-right: 1px solid #c0c0c0;
+    border-right: 0.1rem solid #c0c0c0;
   }
 
   .menu li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     display: block;
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 
   .menu li a:hover {
     background: #333;
     color: #fff;
-    -moz-box-shadow: 0 3px 10px 0 #ccc;
-    //-webkit-box-shadow: 0 3px 10px 0 #ccc;
-    text-shadow: 0px 0px 5px #fff;
+    -moz-box-shadow: 0 0.3rem 1rem 0 #ccc;
+    text-shadow: 0px 0px 0.5rem #fff;
   }
 
   .menu .icon {
     display: none;
   }
-
-
-
-
- 
-
 `
-

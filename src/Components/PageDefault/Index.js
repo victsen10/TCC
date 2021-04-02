@@ -15,21 +15,29 @@ export default function PageDefault({ children }) {
   )
 }
 
-function moveForm() {
+/* codigo nao necessario*/
+
+// function moveForm() {
   
-  var div = 'children';
-  var larguraTela = window.innerWidth;
-  var widthDIV = parseInt(document.getElementById(div).style.width);
-  var posicaoX = larguraTela / 2 - widthDIV / 2
-  document.getElementById(div).style.width = widthDIV + 'px'
-  document.getElementById(div).style.left = posicaoX + 'px'
-}
+//   var div = 'children';
+//   var larguraTela = window.innerWidth;
+//   var widthDIV = parseFloat(document.getElementById(div).style.width);
+//   var posicaoX = larguraTela / 2 - widthDIV / 2
 
-window.addEventListener('load', function () {
-  moveForm()
-});
+//   console.log('Dimensão da tela: ' + larguraTela)
+//   console.log('Tamanho da Div: ' + widthDIV)
+//   console.log('Posição da left: ' + posicaoX)
 
-window.addEventListener('resize', function () {
-  moveForm()
- })
+
+//   document.getElementById(div).style.width = widthDIV + 'px'
+//   document.getElementById(div).style.left = posicaoX + 'px'
+// }
+
+// window.addEventListener('load', function () {
+//   moveForm()
+// });
+
+// window.addEventListener('resize', function () {
+//   moveForm()
+//  })
 
