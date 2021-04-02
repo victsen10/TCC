@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const ContainerForm = {
-  width: '992px',
-  height: '568px',
+  width: '99.2rem',
+  height: '56.8rem',
   zIndex: '0',
   textAlign: 'center',
   Display: 'flex',
@@ -10,30 +10,30 @@ export const ContainerForm = {
 
 export const LabelIitle = {
   position: 'absolute',
-  width: '415px',
-  height: '54px',
-  left: '471px',
-  top: '343px',
+  width: '41.5rem',
+  height: '5.4rem',
+  left: '47.1rem',
+  top: '34.3rem',
   textAlign: 'center',
   zIndex: '1',
 }
 
 export const Title = {
-  fontSize: '45px',
+  fontSize: '4.5rem',
   color: 'white',
 }
 
 export const FormFaleConosco = {
   width: '50%',
-  height: '422px',
+  height: '42.2rem',
   margin: '0.5rem',
 }
 export const InfoFaleConosco = {
   width: '50%',
-  height: '422px',
+  height: '44.2rem',
   color: 'white',
-  fontSize: '28px',
-  borderRight: '5px solid black',
+  fontSize: '2.8rem',
+  borderRight: '0.5rem solid black',
 }
 
 export const ContainerFormSecundario = {
@@ -43,51 +43,49 @@ export const ContainerFormSecundario = {
 export const Form = styled.form`
   div {
     width: auto;
-    height: 50px;
+    height: 5rem;
     text-align:left;
     background: rgba(196, 196, 196, 0.35);
-    margin-top:10px;
+    margin-top:1rem;
     
   }
 
   label {
     color: white;
-    font-size: 24px;
+    font-size: 2.4rem;
    
   }
 
   div textArea{
-    height: 110px;
+    height: 11.0rem;
     width:95%;
   }
 
   .TextAreaDiv{
-    height: 180px;
+    height: 18.0rem;
 
   }
 
   div input{
-    width:auto;
-    height:50px;
+    width:90%;
+    height:5.0rem;
     margin-left: 0.5rem;
     border:none;
     background: none;
-    font-size:24px;
+    font-size:0.24rem;
 
-    input:-internal-autofill-selected 
+    :-internal-autofill-selected{ 
     appearance: none;
     background-color: none;
     background-image: none;
-    color: -internal-light-dark(black, white) !important;}
+    color:-internal-light-dark(black, white) !important;} 
   
   
     input::-webkit-input-placeholder {
     color: black;
-  }
-  
+    }
   
 
-  }
 
   
 }

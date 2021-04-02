@@ -34,7 +34,7 @@ function Login() {
                 <label
                   style={{
                     color: 'white',
-                    fontSize: '16px',
+                    fontSize: '1.6rem',
                     textAlign: 'left',
                   }}
                 >
@@ -56,7 +56,7 @@ function Login() {
               <label
                 style={{
                   color: 'white',
-                  fontSize: '20px',
+                  fontSize: '1.6rem',
                   paddingTop: '0.5rem',
                 }}
               >

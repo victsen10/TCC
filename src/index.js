@@ -14,6 +14,11 @@ import Login from './pages/Login/Index';
 import QuemSomos from './pages/QuemSomos/Index';
 import FaleConosco from './pages/FaleConosco/Index';
 import Cadastro from './pages/Cadastro/Index';
+import Admin from './pages/Admin/Index';
+import AssistenciaTecnica from './pages/AssistenciaTecnica/Index';
+import Reparo from './pages/Reparo/Index';
+import Upgrade from './pages/Upgrade/Index';
+import Pedidos from './pages/Pedidos/Index';
 
 ;
 
@@ -26,7 +31,13 @@ ReactDOM.render(
       <Route path="/Login/" component={Login} exact />
       <Route path="/QuemSomos/" component={QuemSomos} exact />
       <Route path="/FaleConosco/" component={FaleConosco} exact />
-      <Route path="/Cadastro/" component={Cadastro} />
+      <Route path="/Cadastro/" component={Cadastro} exact />
+      <Route path="/Admin/" component={Admin} exact />
+      <Route path="/AssistenciaTecnica/" component={AssistenciaTecnica} exact />
+      <Route path="/Reparo/" component={Reparo} exact />
+      <Route path="/Upgrade/" component={Upgrade} exact />
+      <Route path="/Pedidos/" component={Pedidos} exact />
+      
       
 
 
